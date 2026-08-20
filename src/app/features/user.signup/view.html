@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <h1>Cadastro</h1>
+    <ul>
+        {{errors}}
+    </ul>
+    <form method="post">
+        <label>
+            Nome:
+            <input type="text" name="username" value="{{username}}" />
+        </label>
+        <label>
+            Email:
+            <input type="email" name="email" value="{{email}}" />
+        </label>
+        <label>
+            Senha:
+            <input type="password" name="pass" value="{{pass}}" />
+        </label>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+
+</html>
